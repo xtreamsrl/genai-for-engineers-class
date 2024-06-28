@@ -3,10 +3,7 @@ import plotly
 import plotly.express as px
 
 
-def plot_movies(data: pd.DataFrame, sample: int = 1000) -> plotly.graph_objs.Figure:
-    if sample is not None:
-        data = data.sample(sample, random_state=42)
-
+def plot_movies(data: pd.DataFrame) -> plotly.graph_objs.Figure:
     fig = (
         px.scatter(
             data,
@@ -33,23 +30,23 @@ def plot_movies(data: pd.DataFrame, sample: int = 1000) -> plotly.graph_objs.Fig
 
 
 def plot_sentences(sentences: pd.DataFrame) -> plotly.graph_objs.Figure:
-    sentences["short_sentences"] = sentences["sentences"].str.slice(0, 20) + "..."
+    sentences["short_sentence"] = sentences["sentence"].str.slice(0, 20) + "..."
 
     fig = (
         px.scatter(
             sentences,
             x="x",
             y="y",
-            text="short_sentences",
+            text="short_sentence",
             color="field",
             height=512,
             hover_name="field",
             hover_data={
-                "sentences": True,
+                "sentence": True,
                 "x": False,
                 "y": False,
                 "field": False,
-                "short_sentences": False,
+                "short_sentence": False,
             },
         )
         .update_layout(

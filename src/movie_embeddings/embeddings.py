@@ -15,7 +15,7 @@ def add_sentences(data: pd.DataFrame, sentences: list[str], *, encoder) -> pd.Da
         drop=True
     )
 
-    encodings = encoder.encode(all_sentences["sentences"])
+    encodings = encoder.encode(all_sentences["sentence"])
 
     reduced_encodings = reduce_dimensions(encodings)
 
