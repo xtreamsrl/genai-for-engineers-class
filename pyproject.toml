@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "genai-for-engineers-class"
+version = "0.1.0"
+description = "Code and material for the class Introduction to GenAI for Engineers"
+authors = ["Emanuele Fabbiani <donlelef@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
