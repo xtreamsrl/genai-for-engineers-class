@@ -1,4 +1,4 @@
-# genai-for-engineers-class
+# GenAI for Engineers Class
 
 Code and material for the class "Introduction to GenAI for Engineers"
 
