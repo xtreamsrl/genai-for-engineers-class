@@ -13,7 +13,7 @@ Code and material for the class "Introduction to GenAI for Engineers"
 ## 🤗 How to contribute
 
 > [!NOTE]
-> The project uses Python 3.10
+> The project uses Python 3.10 for compatibility with Colab.
 
 1. Install Poetry, following the official docs: https://python-poetry.org/docs/#installation
 
