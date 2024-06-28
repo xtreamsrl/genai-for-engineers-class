@@ -10,6 +10,11 @@ Code and material for the class "Introduction to GenAI for Engineers"
 [What are Vector Databases?](./notebooks/02-vector_databases.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/02-vector_databases.ipynb)
 [RAG From Scratch](./notebooks/03-rag_from_scratch.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/03-rag_from_scratch.ipynb)
 
+## 🎓 A bit of theory
+
+The slides for this class are available on [Canva](https://www.canva.com/design/DAGI8YciVf0/nqo2qMxGM-q4_itr72_clw/edit?utm_content=DAGI8YciVf0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), kindly powered by [xtream](https://xtreamers.io).
+
+
 ## 🤗 How to contribute
 
 > [!NOTE]
