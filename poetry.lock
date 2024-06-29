@@ -1743,6 +1743,30 @@ PyYAML = ">=5.3"
 tenacity = ">=8.1.0,<8.4.0 || >8.4.0,<9.0.0"
 
 [[package]]
+name = "langfuse"
+version = "2.36.2"
+description = "A client library for accessing langfuse"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "langfuse-2.36.2-py3-none-any.whl", hash = "sha256:66728feddcec0974e4eb31612151a282fcce2e333b5a61474182b5e67e78e090"},
+    {file = "langfuse-2.36.2.tar.gz", hash = "sha256:3e784505d408aa2c9c2da79487b64d185d8f7fa8a855e5303bcce678454c715b"},
+]
+
+[package.dependencies]
+backoff = ">=1.10.0"
+httpx = ">=0.15.4,<1.0"
+idna = ">=3.7,<4.0"
+packaging = ">=23.2,<24.0"
+pydantic = ">=1.10.7,<3.0"
+wrapt = ">=1.14,<2.0"
+
+[package.extras]
+langchain = ["langchain (>=0.0.309)"]
+llama-index = ["llama-index (>=0.10.12,<2.0.0)"]
+openai = ["openai (>=0.27.8)"]
+
+[[package]]
 name = "langsmith"
 version = "0.1.82"
 description = "Client library to connect to the LangSmith LLM Tracing and Evaluation Platform."
@@ -2678,13 +2702,13 @@ files = [
 
 [[package]]
 name = "packaging"
-version = "24.1"
+version = "23.2"
 description = "Core utilities for Python packages"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.7"
 files = [
-    {file = "packaging-24.1-py3-none-any.whl", hash = "sha256:5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124"},
-    {file = "packaging-24.1.tar.gz", hash = "sha256:026ed72c8ed3fcce5bf8950572258698927fd1dbda10a5e981cdf0ac37f4f002"},
+    {file = "packaging-23.2-py3-none-any.whl", hash = "sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"},
+    {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
 ]
 
 [[package]]
@@ -4940,4 +4964,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "bcebb623fb1c17568164ba545bbcb19382ce66392f8245989c31399e9df1bb46"
+content-hash = "99a4bec3c922d885c3a5ae07bd4fccaf8038115e4ee03ecd91c1ad19b4e4b422"
