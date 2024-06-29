@@ -5,7 +5,7 @@ description = "Code and material for the class Introduction to GenAI for Enginee
 authors = ["Emanuele Fabbiani <donlelef@gmail.com>"]
 readme = "README.md"
 packages = [
-    { include = "movie_embeddings", from = "src" },
+    { include = "class_utils", from = "src" },
 ]
 
 [tool.poetry.dependencies]
