@@ -23,7 +23,7 @@ Code and material for the class "Introduction to GenAI for Engineers"
 The slides for this class are available on [Canva](https://www.canva.com/design/DAGI8YciVf0/nqo2qMxGM-q4_itr72_clw/edit?utm_content=DAGI8YciVf0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), kindly powered by [xtream](https://xtreamers.io).
 
 
-## 🤗 How to contribute
+## 🥂 How to contribute
 
 > [!NOTE]
 > The project uses Python 3.10 for compatibility with Colab.
@@ -43,10 +43,28 @@ poetry install
 pre-commit install
 ```
 
-## Authors
+## 🤗 Authors
 This class was created by the AI team at [xtream](https://xtreamers.io), with contributions from:
 - [Emanuele Fabbiani](https://www.linkedin.com/in/emanuelefabbiani/)
 - [Luca Baggi](https://www.linkedin.com/in/lucabaggi/)
 - [Gabriele Orlandi](https://www.linkedin.com/in/gabri-o/)
 - [Fabio Lipreri](https://www.linkedin.com/in/fabiolipreri/)
 - [Marta Peroni](https://www.linkedin.com/in/peroni-marta-19145499/)
+
+## 🔍 Spotted in...
+The material in this repository was used in classes and seminars taught at:
+
+- [TWIN Agency](https://twin.services/en/), 2024
+- [CRIF](https://www.crif.it/), 2024
+- [WeRoad](https://www.weroad.it/), 2024
+- [Banca CF+](https://www.bancacfplus.it/), 2023
+- [Boolean Dataweek](https://boolean.careers/), 2023
+
+And was the base for the following talks and workshops:
+
+- Embeddings, Transformers, RLHF: Three Key Ideas to Understand ChatGPT, [AI Conf](https://www.aiconf.it/), 2024, Milan, Italy
+- How to Build Your Own GPT, [AMLD](https://appliedmldays.org/), 2024, Lausanne, Switzerland
+- Embeddings, Transformers, RLHF: Three Key Ideas to Understand ChatGPT, [PyCon IT](https://2024.pycon.it/en), 2024, Florence, Italy
+- Beyond ChatGPT: RAG and Fine-Tuning, University of Pavia, 2024, Pavia, Italy
+- Embeddings, Transformers, RLHF: Three Key Ideas to Understand ChatGPT, [BI Digital](https://bidigital.it/), 2023, Biella, Italy
+- Embeddings, Transformers, RLHF: Three Key Ideas to Understand ChatGPT, [SIIAM](https://www.siiam.it/en) Congress, 2023, Rome, Italy
