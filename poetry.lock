@@ -2869,6 +2869,21 @@ fastembed = ["fastembed (==0.2.7)"]
 fastembed-gpu = ["fastembed-gpu (==0.2.7)"]
 
 [[package]]
+name = "qdrant-haystack"
+version = "3.8.1"
+description = "An integration of Qdrant ANN vector database backend with Haystack"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "qdrant_haystack-3.8.1-py3-none-any.whl", hash = "sha256:a6e19c46c72ec1e6a86b3ee6b2821b6033a19a48966707dc0de5937c84e4a793"},
+    {file = "qdrant_haystack-3.8.1.tar.gz", hash = "sha256:bf56bcf45b18ff8ee3302ac2b9b189cd2db3318e63a47cba03bad42401c5fcc0"},
+]
+
+[package.dependencies]
+haystack-ai = ">=2.0.1"
+qdrant-client = "*"
+
+[[package]]
 name = "referencing"
 version = "0.35.1"
 description = "JSON Referencing + Python"
@@ -4017,4 +4032,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "64db8f95649d288bdbd2011b252f61e3737114f1c42c173328840cbd2962e24c"
+content-hash = "e4979efa0982c2a82845271995cd7497ea979d6a6cae65836e5f2ccecee0b436"
