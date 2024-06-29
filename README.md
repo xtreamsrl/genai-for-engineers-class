@@ -10,6 +10,7 @@ Code and material for the class "Introduction to GenAI for Engineers"
 [What are Vector Databases?](./notebooks/02-vector_databases.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/02-vector_databases.ipynb)
 [RAG From Scratch](./notebooks/03-rag_from_scratch.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/03-rag_from_scratch.ipynb)
 [Haystack Basics](./notebooks/04-haystack_basics.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/04-haystack_basics.ipynb)
+[Haystack RAG](./notebooks/05-haystack_rag.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/05-haystack_rag.ipynb)
 
 
 ## 🎓 A bit of theory
