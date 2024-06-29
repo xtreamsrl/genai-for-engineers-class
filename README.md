@@ -14,6 +14,7 @@ Code and material for the class "Introduction to GenAI for Engineers"
 6 | [Guardrails](./notebooks/06-guardrails.ipynb)                       | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/06-guardrails.ipynb) 
 7 | [Observability](./notebooks/07-observability.ipynb)                 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/07-observability.ipynb) 
 8 | [Function Calling](./notebooks/08-function_calling.ipynb)           | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/08-function_calling.ipynb) 
+9 | [Agents](./notebooks/09-agents.ipynb)                               | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/09-agents.ipynb) 
 
 
 ## 🎓 A bit of theory
