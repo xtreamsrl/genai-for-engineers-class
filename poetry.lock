@@ -1767,6 +1767,21 @@ llama-index = ["llama-index (>=0.10.12,<2.0.0)"]
 openai = ["openai (>=0.27.8)"]
 
 [[package]]
+name = "langfuse-haystack"
+version = "0.2.0"
+description = ""
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "langfuse_haystack-0.2.0-py3-none-any.whl", hash = "sha256:f18e283c34e643ca2e01c10c01ac95bce77a85d6628c3b4a401c2b0cd0486716"},
+    {file = "langfuse_haystack-0.2.0.tar.gz", hash = "sha256:c688357c2ea712ab3d598f84717520de593519118a18aa5af49d788a6bb54077"},
+]
+
+[package.dependencies]
+haystack-ai = ">=2.1.0"
+langfuse = "*"
+
+[[package]]
 name = "langsmith"
 version = "0.1.82"
 description = "Client library to connect to the LangSmith LLM Tracing and Evaluation Platform."
@@ -4964,4 +4979,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "99a4bec3c922d885c3a5ae07bd4fccaf8038115e4ee03ecd91c1ad19b4e4b422"
+content-hash = "1f825a0dba0ba797c6b92a9b435f3b78a98c11f59ac6837e457cea53d5280361"

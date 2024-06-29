@@ -22,6 +22,7 @@ anthropic-haystack = "^0.4.0"
 qdrant-haystack = "^3.8.1"
 guardrails-ai = "^0.4.5"
 langfuse = "^2.36.2"
+langfuse-haystack = "^0.2.0"
 
 [tool.poetry.group.ide.dependencies]
 jupyterlab = "^4.2.2"
