@@ -12,6 +12,7 @@ Code and material for the class "Introduction to GenAI for Engineers"
 4 | [Haystack Basics](./notebooks/04-haystack_basics.ipynb)             | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/04-haystack_basics.ipynb) 
 5 | [Haystack RAG](./notebooks/05-haystack_rag.ipynb)                   | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/05-haystack_rag.ipynb) 
 6 | [Guardrails](./notebooks/06-guardrails.ipynb)                       | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/06-guardrails.ipynb) 
+7 | [Guardrails](./notebooks/07-observability.ipynb)                    | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/07-observability.ipynb) 
 
 
 ## 🎓 A bit of theory
