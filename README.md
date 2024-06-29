@@ -42,3 +42,11 @@ poetry install
 ```bash
 pre-commit install
 ```
+
+## Authors
+This class was created by the AI team at [xtream](https://xtreamers.io), with contributions from:
+- [Emanuele Fabbiani](https://www.linkedin.com/in/emanuelefabbiani/)
+- [Luca Baggi](https://www.linkedin.com/in/lucabaggi/)
+- [Gabriele Orlandi](https://www.linkedin.com/in/gabri-o/)
+- [Fabio Lipreri](https://www.linkedin.com/in/fabiolipreri/)
+- [Marta Peroni](https://www.linkedin.com/in/peroni-marta-19145499/)
