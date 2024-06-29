@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "genai-for-engineers-class"
-version = "0.1.0"
+version = "1.0.0"
 description = "Code and material for the class Introduction to GenAI for Engineers"
-authors = ["Emanuele Fabbiani <donlelef@gmail.com>"]
+authors = ["Emanuele Fabbiani", "Luca Baggi", "Gabriele Orlandi", "Fabio Lipreri", "Marta Peroni"]
 readme = "README.md"
 packages = [
     { include = "class_utils", from = "src" },
