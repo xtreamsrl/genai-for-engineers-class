@@ -23,7 +23,7 @@ def add_sentences(data: pd.DataFrame, sentences: list[str], *, encoder) -> pd.Da
 
 
 def reduce_dimensions(vectors: np.array) -> np.array:
-    return umap.UMAP().fit_transform(vectors)
+    return umap.UMAP(random_state=42).fit_transform(vectors)
 
 
 def add_umap_to_dataset(data: pd.DataFrame, reduced_vectors: np.array) -> pd.DataFrame:
