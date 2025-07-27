@@ -643,6 +643,7 @@ dependencies = [
     { name = "guardrails-ai" },
     { name = "haystack-ai" },
     { name = "langfuse" },
+    { name = "langfuse-haystack" },
     { name = "litellm" },
     { name = "numpy" },
     { name = "openai" },
@@ -666,7 +667,8 @@ requires-dist = [
     { name = "anthropic-haystack", specifier = ">=3.1.0" },
     { name = "guardrails-ai", specifier = ">=0.5.15" },
     { name = "haystack-ai", specifier = ">=2.15.2" },
-    { name = "langfuse", specifier = ">=3.2.1" },
+    { name = "langfuse", specifier = ">=2.0.1,<3.0.0" },
+    { name = "langfuse-haystack", specifier = ">=2.0.1" },
     { name = "litellm", specifier = ">=1.74.8" },
     { name = "numpy", specifier = ">=2.2.6" },
     { name = "openai", specifier = ">=1.97.1" },
@@ -1447,22 +1449,34 @@ wheels = [
 
 [[package]]
 name = "langfuse"
-version = "3.2.1"
+version = "2.60.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "anyio" },
     { name = "backoff" },
     { name = "httpx" },
-    { name = "opentelemetry-api" },
-    { name = "opentelemetry-exporter-otlp" },
-    { name = "opentelemetry-sdk" },
+    { name = "idna" },
     { name = "packaging" },
     { name = "pydantic" },
     { name = "requests" },
     { name = "wrapt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/61/0d/8fc51099cf337fb3b56cb7d305074bc0223c62e1ccabf80cc6285ccf5b31/langfuse-3.2.1.tar.gz", hash = "sha256:f79b0380dfcf52c7525bb5d7f8e9d8786a6fc8b37867def047bb388930a7beb3", size = 153369, upload-time = "2025-07-16T09:50:28.434Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/06/1a/2443e3715767f1bf9d8cf32d74ac59cfb60e1d9b84e99df13fd656639eb3/langfuse-2.60.9.tar.gz", hash = "sha256:040753346d7df4a0be6967dfc7efe3de313fee362524fe2f801867fcbbca3c98", size = 152684, upload-time = "2025-06-29T09:39:27.628Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/92/b0/8f08df3f0fa584c4132937690c6dd33e0a116f963ecf2b35567f614e0ca7/langfuse-3.2.1-py3-none-any.whl", hash = "sha256:07a84e8c1eed6ac8e149bdda1431fd866e4aee741b66124316336fb2bc7e6a32", size = 299315, upload-time = "2025-07-16T09:50:26.582Z" },
+    { url = "https://files.pythonhosted.org/packages/20/50/3aa93fc284ba5f81dcdd00b6414caee338fd45d77fa4959c3e4f838cebc6/langfuse-2.60.9-py3-none-any.whl", hash = "sha256:e4291a66bc579c66d7652da5603ca7f0409536700d7b812e396780b5d9a0685d", size = 275543, upload-time = "2025-06-29T09:39:26.234Z" },
+]
+
+[[package]]
+name = "langfuse-haystack"
+version = "2.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "haystack-ai" },
+    { name = "langfuse" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/45/b1/3b210c26be2f2591e157fdd90015d77a9ff379b69c438dac950b88cd1477/langfuse_haystack-2.0.1.tar.gz", hash = "sha256:fc4d125a3a9b7f929580a2414ae8e23cb70c4ddfb6083a508c6d901a73608baa", size = 24560, upload-time = "2025-06-02T14:24:11.294Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/9e/78b6499db31513dac9b6876fc22fb7c987bde7888b96a59ca584c52c176c/langfuse_haystack-2.0.1-py3-none-any.whl", hash = "sha256:b4ff2cb257b50e6c15f3fb3e7522cecfe69005d4c83002d634b282bea4ed1889", size = 17279, upload-time = "2025-06-02T14:24:12.355Z" },
 ]
 
 [[package]]
@@ -2107,19 +2121,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/99/c9/4509bfca6bb43220ce7f863c9f791e0d5001c2ec2b5867d48586008b3d96/opentelemetry_api-1.35.0.tar.gz", hash = "sha256:a111b959bcfa5b4d7dffc2fbd6a241aa72dd78dd8e79b5b1662bda896c5d2ffe", size = 64778, upload-time = "2025-07-11T12:23:28.804Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1d/5a/3f8d078dbf55d18442f6a2ecedf6786d81d7245844b2b20ce2b8ad6f0307/opentelemetry_api-1.35.0-py3-none-any.whl", hash = "sha256:c4ea7e258a244858daf18474625e9cc0149b8ee354f37843415771a40c25ee06", size = 65566, upload-time = "2025-07-11T12:23:07.944Z" },
-]
-
-[[package]]
-name = "opentelemetry-exporter-otlp"
-version = "1.35.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "opentelemetry-exporter-otlp-proto-grpc" },
-    { name = "opentelemetry-exporter-otlp-proto-http" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/2e/2e/63718faa67b17f449a7fb7efdc7125a408cbe5d8c0bb35f423f2776d60b5/opentelemetry_exporter_otlp-1.35.0.tar.gz", hash = "sha256:f94feff09b3524df867c7876b79c96cef20068106cb5efe55340e8d08192c8a4", size = 6142, upload-time = "2025-07-11T12:23:30.128Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/cf/db/2da28358d3101ca936c1643becbb4ebd69e9e48acf27f153d735a4813c6b/opentelemetry_exporter_otlp-1.35.0-py3-none-any.whl", hash = "sha256:8e6bb9025f6238db7d69bba7ee37c77e4858d0a1ff22a9e126f7c9e017e83afe", size = 7016, upload-time = "2025-07-11T12:23:10.679Z" },
 ]
 
 [[package]]
