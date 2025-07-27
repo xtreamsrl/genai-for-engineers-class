@@ -49,7 +49,10 @@ def build_prompt_building_pipeline(
         "embedder", SentenceTransformersTextEmbedder(model=embedding_model)
     )
     pipe.add_component("retriever", retriever)
-    pipe.add_component("prompt_builder", PromptBuilder(template=prompt_template))
+    pipe.add_component(
+        "prompt_builder",
+        PromptBuilder(template=prompt_template, required_variables="*"),
+    )
 
     pipe.connect("embedder.embedding", "retriever.query_embedding")
     pipe.connect("retriever", "prompt_builder.documents")
