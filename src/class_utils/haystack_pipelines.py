@@ -31,7 +31,7 @@ def build_openai_rag_pipeline(
     retriever: InMemoryEmbeddingRetriever | QdrantEmbeddingRetriever,
     prompt_template: str,
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2",
-    openai_model: str = "gpt-3.5-turbo",
+    openai_model: str = "gpt-4.1",
 ) -> Pipeline:
     pipe = build_prompt_building_pipeline(retriever, prompt_template, embedding_model)
     pipe.add_component("llm", OpenAIGenerator(model=openai_model))
@@ -49,7 +49,10 @@ def build_prompt_building_pipeline(
         "embedder", SentenceTransformersTextEmbedder(model=embedding_model)
     )
     pipe.add_component("retriever", retriever)
-    pipe.add_component("prompt_builder", PromptBuilder(template=prompt_template))
+    pipe.add_component(
+        "prompt_builder",
+        PromptBuilder(template=prompt_template, required_variables="*"),
+    )
 
     pipe.connect("embedder.embedding", "retriever.query_embedding")
     pipe.connect("retriever", "prompt_builder.documents")
