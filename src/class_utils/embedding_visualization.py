@@ -1,9 +1,9 @@
-import pandas as pd
 import plotly
 import plotly.express as px
+import polars as pl
 
 
-def plot_movies(data: pd.DataFrame) -> plotly.graph_objs.Figure:
+def plot_movies(data: pl.DataFrame) -> plotly.graph_objs.Figure:
     fig = (
         px.scatter(
             data,
@@ -29,8 +29,10 @@ def plot_movies(data: pd.DataFrame) -> plotly.graph_objs.Figure:
     return fig
 
 
-def plot_sentences(sentences: pd.DataFrame) -> plotly.graph_objs.Figure:
-    sentences["short_sentence"] = sentences["sentence"].str.slice(0, 20) + "..."
+def plot_sentences(sentences: pl.DataFrame) -> plotly.graph_objs.Figure:
+    sentences = sentences.with_columns(
+        short_sentence=pl.col.sentence.str.slice(0, 20) + "...",
+    )
 
     fig = (
         px.scatter(
