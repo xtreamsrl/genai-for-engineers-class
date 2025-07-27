@@ -20,20 +20,20 @@ Code and material for the class "Introduction to GenAI for Engineers"
 
 ## 🎓 A bit of theory
 
-The slides for this class are available on [Canva](https://www.canva.com/design/DAGI8YciVf0/nqo2qMxGM-q4_itr72_clw/edit?utm_content=DAGI8YciVf0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), kindly powered by [xtream](https://xtreamers.io).
+The slides for this class are available on [Canva](https://www.canva.com/design/DAGuWIWYLrQ/UYOLqXfVY7N_zfMudzA3OA/view?utm_content=DAGuWIWYLrQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf7364680c4), kindly powered by [xtream](https://xtreamers.io).
 
 
 ## 🥂 How to contribute
 
 > [!NOTE]
-> The project uses Python 3.10 for compatibility with Colab.
+> The project uses Python 3.11 for compatibility with Colab.
 
-1. Install Poetry, following the official docs: https://python-poetry.org/docs/#installation
+1. Install uv, following the official docs: https://docs.astral.sh/uv/getting-started/installation/
 
 2. Run:
 
 ```bash
-poetry install
+uv sync --all-groups
 ```
 
 3. It is highly recommended to use `nbstripout` to avoid pushing the output of jupyter notebooks.
@@ -50,17 +50,23 @@ This class was created by the AI team at [xtream](https://xtreamers.io), with co
 - [Gabriele Orlandi](https://www.linkedin.com/in/gabri-o/)
 - [Fabio Lipreri](https://www.linkedin.com/in/fabiolipreri/)
 - [Marta Peroni](https://www.linkedin.com/in/peroni-marta-19145499/)
+- [Carlo Piccinin](https://www.linkedin.com/in/carlo-piccinin-399a0869/)
 
 ## 🔍 Spotted in...
 The material in this repository was used in classes and seminars taught at:
 
+- [Catholic University of Milan](https://www.unicatt.it/), 2025
+- [Fabrick](https://www.fabrick.com/), 2025
+- [Atlante](https://atlante.energy/), 2025
+- [CRIF](https://www.crif.it/), 2024 & 2025
+- [Talent Garden](https://talentgarden.com/), 2025
+- [Zuccari](https://www.zuccari.com/), 2025
 - [TWIN Agency](https://twin.services/en/), 2024
-- [CRIF](https://www.crif.it/), 2024
 - [WeRoad](https://www.weroad.it/), 2024
 - [Banca CF+](https://www.bancacfplus.it/), 2023
 - [Boolean Dataweek](https://boolean.careers/), 2023
 
-And was the base for the following talks and workshops:
+And was the base for the 10+ talks and workshops, including:
 
 - Embeddings, Transformers, RLHF: Three Key Ideas to Understand ChatGPT, [AI Conf](https://www.aiconf.it/), 2024, Milan, Italy
 - How to Build Your Own GPT, [AMLD](https://appliedmldays.org/), 2024, Lausanne, Switzerland
