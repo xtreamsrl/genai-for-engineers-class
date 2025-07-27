@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "anthropic-haystack>=3.1.0",
+    "autogen>=0.9.7",
     "guardrails-ai>=0.5.15",
     "haystack-ai>=2.15.2",
     "langfuse>=2.0.1, <3.0.0",
