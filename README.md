@@ -6,8 +6,9 @@ Code and material for the class "Introduction to GenAI for Engineers"
 
 **#** | **name**                                                                             | **open in**
 :-----: |:-------------------------------------------------------------------------------------| :-------:
-1 | [Explore Embeddings](./notebooks/01-embeddings.ipynb)                                | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/01-embeddings.ipynb)          
-2 | [What are Vector Databases?](./notebooks/02-vector_databases.ipynb)                  | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/02-vector_databases.ipynb) 
+1 | [Explore Tokens](./notebooks/01-embeddings.ipynb)                                    | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/01-tokenization.ipynb)          
+2 | [Explore Embeddings](./notebooks/01-embeddings.ipynb)                                | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/02-embeddings.ipynb)          
+3 | [What are Vector Databases?](./notebooks/02-vector_databases.ipynb)                  | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/03-vector_databases.ipynb) 
 3 | [RAG From Scratch](./notebooks/03-rag_from_scratch.ipynb)                            | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/03-rag_from_scratch.ipynb) 
 4 | [Haystack Basics](./notebooks/04-haystack_basics.ipynb)                              | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/04-haystack_basics.ipynb) 
 5 | [Haystack RAG](./notebooks/05-haystack_rag.ipynb)                                    | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/05-haystack_rag.ipynb) 
@@ -18,15 +19,10 @@ Code and material for the class "Introduction to GenAI for Engineers"
 10 | [Agents for Income Statement Analysis](./notebooks/10-agents_income_statement.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/genai-for-engineers-class/blob/main/notebooks/10-agents_income_statement.ipynb) 
 
 
-## 🎓 A bit of theory
-
-The slides for this class are available on [Canva](https://www.canva.com/design/DAGuWIWYLrQ/UYOLqXfVY7N_zfMudzA3OA/view?utm_content=DAGuWIWYLrQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf7364680c4), kindly powered by [xtream](https://xtreamers.io).
-
-
 ## 🥂 How to contribute
 
 > [!NOTE]
-> The project uses Python 3.11 for compatibility with Colab.
+> The project uses Python 3.12 for compatibility with Colab.
 
 1. Install uv, following the official docs: https://docs.astral.sh/uv/getting-started/installation/
 
@@ -56,6 +52,7 @@ This class was created by the AI team at [xtream](https://xtreamers.io), with co
 The material in this repository was used in classes and seminars taught at:
 
 - [Catholic University of Milan](https://www.unicatt.it/), 2025
+- [Lavazza](https://www.lavazza.it), 2025
 - [Fabrick](https://www.fabrick.com/), 2025
 - [Atlante](https://atlante.energy/), 2025
 - [CRIF](https://www.crif.it/), 2024 & 2025
