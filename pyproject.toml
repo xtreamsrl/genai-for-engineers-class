@@ -5,6 +5,7 @@ description = "Code examples for the GenAI for Engineers class"
 readme = "README.md"
 requires-python = ">=3.12, <3.13"
 dependencies = [
+    "ag2[openai]>=0.9.7",
     "anthropic-haystack>=4.5.0",
     "autogen>=0.9.7",
     "diffusers>=0.35.2",
@@ -15,7 +16,7 @@ dependencies = [
     "langfuse-haystack>=3.0.1",
     "litellm>=1.79.1",
     "numpy>=2.3.4",
-    "openai>=1.97.1",
+    "openai>=1.97.1, <1.100.0",
     "pillow>=12.0.0",
     "plotly>=6.3.1",
     "polars>=1.35.1",

@@ -23,6 +23,11 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/c5/80/fbf2a2da9303d83aecad5b352022096af776cdd063b121f4b6b4b5e13bdf/ag2-0.9.7-py3-none-any.whl", hash = "sha256:19f75db9abe16a19270d26f74553cd6ad5c10dc101aaa711831e4061e5de49c1", size = 860368, upload-time = "2025-07-25T08:48:39.271Z" },
 ]
 
+[package.optional-dependencies]
+openai = [
+    { name = "openai" },
+]
+
 [[package]]
 name = "aiohappyeyeballs"
 version = "2.6.1"
@@ -595,6 +600,7 @@ name = "genai-for-engineers-class"
 version = "0.2.0"
 source = { editable = "." }
 dependencies = [
+    { name = "ag2", extra = ["openai"] },
     { name = "anthropic-haystack" },
     { name = "autogen" },
     { name = "diffusers" },
@@ -627,6 +633,7 @@ ide = [
 
 [package.metadata]
 requires-dist = [
+    { name = "ag2", extras = ["openai"], specifier = ">=0.9.7" },
     { name = "anthropic-haystack", specifier = ">=4.5.0" },
     { name = "autogen", specifier = ">=0.9.7" },
     { name = "diffusers", specifier = ">=0.35.2" },
@@ -637,7 +644,7 @@ requires-dist = [
     { name = "langfuse-haystack", specifier = ">=3.0.1" },
     { name = "litellm", specifier = ">=1.79.1" },
     { name = "numpy", specifier = ">=2.3.4" },
-    { name = "openai", specifier = ">=1.97.1" },
+    { name = "openai", specifier = ">=1.97.1,<1.100.0" },
     { name = "pillow", specifier = ">=12.0.0" },
     { name = "plotly", specifier = ">=6.3.1" },
     { name = "polars", specifier = ">=1.35.1" },
@@ -1844,7 +1851,7 @@ wheels = [
 
 [[package]]
 name = "openai"
-version = "1.109.1"
+version = "1.99.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -1856,9 +1863,9 @@ dependencies = [
     { name = "tqdm" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c6/a1/a303104dc55fc546a3f6914c842d3da471c64eec92043aef8f652eb6c524/openai-1.109.1.tar.gz", hash = "sha256:d173ed8dbca665892a6db099b4a2dfac624f94d20a93f46eb0b56aae940ed869", size = 564133, upload-time = "2025-09-24T13:00:53.075Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/d2/ef89c6f3f36b13b06e271d3cc984ddd2f62508a0972c1cbcc8485a6644ff/openai-1.99.9.tar.gz", hash = "sha256:f2082d155b1ad22e83247c3de3958eb4255b20ccf4a1de2e6681b6957b554e92", size = 506992, upload-time = "2025-08-12T02:31:10.054Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/2a/7dd3d207ec669cacc1f186fd856a0f61dbc255d24f6fdc1a6715d6051b0f/openai-1.109.1-py3-none-any.whl", hash = "sha256:6bcaf57086cf59159b8e27447e4e7dd019db5d29a438072fbd49c290c7e65315", size = 948627, upload-time = "2025-09-24T13:00:50.754Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/fb/df274ca10698ee77b07bff952f302ea627cc12dac6b85289485dd77db6de/openai-1.99.9-py3-none-any.whl", hash = "sha256:9dbcdb425553bae1ac5d947147bebbd630d91bbfc7788394d4c4f3a35682ab3a", size = 786816, upload-time = "2025-08-12T02:31:08.34Z" },
 ]
 
 [[package]]
