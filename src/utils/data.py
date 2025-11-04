@@ -7,7 +7,7 @@ from haystack import Document
 
 
 def _get_data_base_url() -> str:
-    return "https://github.com/xtreamsrl/genai-for-engineers-class/raw/feat/update-notebooks/data"
+    return "https://github.com/xtreamsrl/genai-for-engineers-class/raw/main/data"
 
 
 def get_image_dataset() -> list[Image.Image]:
